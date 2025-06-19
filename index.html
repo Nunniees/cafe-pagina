@@ -34,3 +34,75 @@
         <figcaption class="portada__figcaption">Café artesanal recién hecho</figcaption>
       </figure>
     </section>
+
+     <!-- Catálogo de productos -->
+    <section class="carta" id="catalogo" aria-labelledby="catalogo-titulo">
+      <h2 id="catalogo-titulo" class="carta__titulo">Nuestro catálogo</h2>
+      <div class="carta__detalle">
+        <article class="producto producto--destacado tarjeta">
+          <img src="img/espresso.jpg" alt="Café espresso" class="producto__imagen">
+          <h3 class="producto__titulo">Espresso</h3>
+          <p class="producto__descripcion">Café intenso y aromático.</p>
+          <span class="producto__precio">$35</span>
+        </article>
+        <article class="producto tarjeta">
+          <img src="img/latte.jpg" alt="Café latte" class="producto__imagen">
+          <h3 class="producto__titulo">Latte</h3>
+          <p class="producto__descripcion">Leche cremosa con espresso.</p>
+          <span class="producto__precio">$42</span>
+        </article>
+        <article class="producto tarjeta">
+          <img src="img/capuchino.jpg" alt="Café capuchino" class="producto__imagen">
+          <h3 class="producto__titulo">Capuchino</h3>
+          <p class="producto__descripcion">Espuma de leche y cacao.</p>
+          <span class="producto__precio">$40</span>
+        </article>
+        <article class="producto tarjeta">
+          <img src="img/americano.jpg" alt="Café americano" class="producto__imagen">
+          <h3 class="producto__titulo">Americano</h3>
+          <p class="producto__descripcion">Suave y ligero, tradicional.</p>
+          <span class="producto__precio">$30</span>
+        </article>
+        <article class="producto tarjeta">
+          <img src="img/moka.jpg" alt="Café moka" class="producto__imagen">
+          <h3 class="producto__titulo">Moka</h3>
+          <p class="producto__descripcion">Chocolate y café, el mejor dúo.</p>
+          <span class="producto__precio">$45</span>
+        </article>
+        <article class="producto tarjeta">
+          <img src="img/frappe.jpg" alt="Café frappé" class="producto__imagen">
+          <h3 class="producto__titulo">Frappé</h3>
+          <p class="producto__descripcion">Fresco, batido y delicioso.</p>
+          <span class="producto__precio">$50</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contacto" id="contacto" aria-labelledby="contacto-titulo">
+      <h2 id="contacto-titulo" class="contacto__titulo">Contáctanos</h2>
+      <form class="contacto__form" aria-label="Formulario de contacto">
+        <label for="nombre" class="contacto__label">Nombre</label>
+        <input type="text" id="nombre" name="nombre" class="contacto__input" required aria-required="true" />
+
+        <label for="email" class="contacto__label">Correo electrónico</label>
+        <input type="email" id="email" name="email" class="contacto__input" required aria-required="true" />
+
+        <label for="mensaje" class="contacto__label">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4" class="contacto__textarea"></textarea>
+
+        <button type="submit" class="contacto__btn">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__copy">&copy; 2025 Café Aurora. Todos los derechos reservados.</p>
+    <aside class="footer__social">
+      <a href="#" class="footer__icon" title="Síguenos en Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="footer__icon" title="Síguenos en Facebook" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+    </aside>
+  </footer>
+  <script src="js/reveal.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+:root {
+  --color-primario: #6f4e37;
+  --color-acento: #ffd700;
+  --color-bg: #fff8f0;
+  --color-texto: #2d2d2d;
+  --font-principal: 'Montserrat', Arial, sans-serif;
+  --font-secundaria: 'Lora', serif;
+  --tam-base: 16px;
+  --radius: 8px;
+  --sombra: 0 4px 16px rgba(111, 78, 55, 0.15);
+}

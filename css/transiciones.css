@@ -1,0 +1,156 @@
+/* Productos */
+.productos {
+  margin: 3rem 0;
+}
+.productos h2 {
+  text-align: center;
+  color: var(--color-primario);
+  margin-bottom: 2rem;
+}
+.productos-lista {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.producto {
+  background: var(--color-bg3);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.2s;
+}
+.producto:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+.producto img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.producto h3 {
+  margin: 0.5rem 0 0 0;
+  color: var(--color-primario);
+}
+.producto p {
+  text-align: center;
+}
+.producto button {
+  padding: 0.5rem 1.5rem;
+  background: var(--color-primario);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.producto button:hover {
+  background: var(--color-acento);
+  color: var(--color-primario);
+}
+
+/* Tabla comparativa */
+.comparativa {
+  margin: 3rem 0;
+  overflow-x: auto;
+}
+.comparativa h2 {
+  text-align: center;
+  color: var(--color-primario);
+  margin-bottom: 1rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-bg3);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin: 0 auto;
+  box-shadow: var(--shadow);
+}
+caption {
+  font-weight: 700;
+  padding: 1rem 0;
+  color: var(--color-primario);
+}
+th, td {
+  padding: 1rem;
+  text-align: center;
+}
+th {
+  background: var(--color-acento);
+}
+tr:nth-child(even) {
+  background: var(--color-bg2);
+}
+tr:hover {
+  background: #ffe7ba;
+}
+
+/* Explicación de cafés */
+.cafes {
+  margin: 3rem 0;
+  background: var(--color-bg3);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cafes h2 {
+  text-align: center;
+  color: var(--color-primario);
+  margin-bottom: 1rem;
+}
+.cafes-lista {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cafe-info {
+  flex: 1 1 250px;
+  min-width: 220px;
+  background: var(--color-bg2);
+  border-radius: var(--radius);
+  box-shadow: 0 1px 4px #0001;
+  padding: 1.2rem;
+  margin: 1rem 0;
+}
+.cafe-info h3 {
+  color: var(--color-primario);
+  margin-bottom: 0.5rem;
+}
+.cafe-info p {
+  font-size: 1rem;
+  color: var(--color-txt-sec);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .productos-lista, .cafes-lista {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 600px) {
+  .cafes {
+    padding: 1rem;
+  }
+  .cafe-info {
+    padding: 0.8rem;
+  }
+  table, th, td {
+    font-size: 0.95rem;
+    padding: 0.5rem;
+  }
+}
+

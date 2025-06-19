@@ -3,106 +3,154 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="css/main.css"/>
-<title>Café Aurora - Siente el sabor del amanecer</title>
+  <!--Linkear css-->
+  <link rel="stylesheet" href="../cafe-pagina/css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/transiciones.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <!--<link rel="stylesheet" href="../cafe-pagina/css/main.css"/>-->
+<title>Café Aurora</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <script src="https:kit.fontawesome.com/d69a8f2de1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header class="header">
-    <figure class="header__logo">
-      <img src="img/logo.png" alt="Logo Café Aurora" title="Café Aurora" class="header__logo-img"/>
-      <figcaption class="visually-hidden">Logo Café Aurora</figcaption>
-    </figure>
-    <nav class="nav" aria-label="Navegación principal">
-      <ul class="nav__lista">
-        <li class="nav__item"><a class="nav__enlace" href="#portada">Inicio</a></li>
-        <li class="nav__item"><a class="nav__enlace" href="#catalogo">Catálogo</a></li>
-        <li class="nav__item"><a class="nav__enlace" href="#contacto">Contacto</a></li>
+  <header>
+    <div class="icono">
+        <i class="fa-solid fa-mug-hot">
+        </i>Café Aurora</div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#comparativa">Comparativa</a></li>
+        <li><a href="#cafes">Nuestros Cafés</a></li>
       </ul>
     </nav>
   </header>
- <main class="cafe-layout">
-    <!-- Portada -->
-    <section class="portada" id="portada">
-      <article class="portada__info">
-        <h1 class="portada__titulo">Café Aurora</h1>
-        <p class="portada__subtitulo">Siente el sabor del amanecer</p>
-        <a class="portada__cta" href="#catalogo">Ver catálogo</a>
-      </article>
-      <figure class="portada__img">
-        <img src="img/portada.jpg" alt="Taza de café al amanecer" class="portada__imagen" />
-        <figcaption class="portada__figcaption">Café artesanal recién hecho</figcaption>
-      </figure>
+
+  <main>
+    <section class="hero" id="inicio">
+      <img src="img/bannercafe.png" alt="Banner cafe aurora" />
+      <div class="hero-text">
+        <h1>Bienvenido a Café Aurora</h1>
+        <p>Café de especialidad, fresco y sostenible. Vive la experiencia de un verdadero café.</p>
+      </div>
     </section>
 
-     <!-- Catálogo de productos -->
-    <section class="carta" id="catalogo" aria-labelledby="catalogo-titulo">
-      <h2 id="catalogo-titulo" class="carta__titulo">Nuestro catálogo</h2>
-      <div class="carta__detalle">
-        <article class="producto producto--destacado tarjeta">
-          <img src="img/espresso.jpg" alt="Café espresso" class="producto__imagen">
-          <h3 class="producto__titulo">Espresso</h3>
-          <p class="producto__descripcion">Café intenso y aromático.</p>
-          <span class="producto__precio">$35</span>
+    <!--Productos-->
+    <section class="productos" id="productos">
+      <h2>Nuestros Cafés</h2>
+      <div class="productos-lista">
+        <article class="producto reveal-scale">
+          <img src="img/espresso_2000x1400px.jpg" alt="Taza de espresso" />
+          <h3>Espresso</h3>
+          <p>Un café intenso con notas de chocolate y almendra. Perfecto para los amantes del sabor puro.</p>
+          <button>Más info</button>
         </article>
-        <article class="producto tarjeta">
-          <img src="img/latte.jpg" alt="Café latte" class="producto__imagen">
-          <h3 class="producto__titulo">Latte</h3>
-          <p class="producto__descripcion">Leche cremosa con espresso.</p>
-          <span class="producto__precio">$42</span>
+        <article class="producto reveal-scale">
+          <img src="img/latte_macchiato_2000x1400px.jpg" alt="Vaso de latte" />
+          <h3>Latte</h3>
+          <p>Suave mezcla de espresso y leche vaporizada, ideal para acompañar tus momentos de relax.</p>
+          <button>Más info</button>
         </article>
-        <article class="producto tarjeta">
-          <img src="img/capuchino.jpg" alt="Café capuchino" class="producto__imagen">
-          <h3 class="producto__titulo">Capuchino</h3>
-          <p class="producto__descripcion">Espuma de leche y cacao.</p>
-          <span class="producto__precio">$40</span>
+        <article class="producto reveal-scale">
+          <img src="img/capuchino_2000x1400px.jpg" alt="Taza de capuchino" />
+          <h3>Capuchino</h3>
+          <p>Espuma cremosa y un toque de cacao para los que buscan un clásico irresistible.</p>
+          <button>Más info</button>
         </article>
-        <article class="producto tarjeta">
-          <img src="img/americano.jpg" alt="Café americano" class="producto__imagen">
-          <h3 class="producto__titulo">Americano</h3>
-          <p class="producto__descripcion">Suave y ligero, tradicional.</p>
-          <span class="producto__precio">$30</span>
+        <article class="producto reveal-scale">
+          <img src="img/Cafegranos1.png" alt="Taza de moka" />
+          <h3>Moka</h3>
+          <p>Mezcla de café espresso, leche y chocolate, para los amantes de lo dulce.</p>
+          <button>Más info</button>
         </article>
-        <article class="producto tarjeta">
-          <img src="img/moka.jpg" alt="Café moka" class="producto__imagen">
-          <h3 class="producto__titulo">Moka</h3>
-          <p class="producto__descripcion">Chocolate y café, el mejor dúo.</p>
-          <span class="producto__precio">$45</span>
+        <article class="producto reveal-scale">
+          <img src="img/frappuccino-500.500.500.s.jpg" alt="Vaso de frappé" />
+          <h3>Frappé</h3>
+          <p>Café frío batido con hielo, refrescante y delicioso para días calurosos.</p>
+          <button>Más info</button>
         </article>
-        <article class="producto tarjeta">
-          <img src="img/frappe.jpg" alt="Café frappé" class="producto__imagen">
-          <h3 class="producto__titulo">Frappé</h3>
-          <p class="producto__descripcion">Fresco, batido y delicioso.</p>
-          <span class="producto__precio">$50</span>
+        <article class="producto reveal-scale">
+          <img src="img/machiato2000x1400px.jpg" alt="Taza de macchiato" />
+          <h3>Macchiato</h3>
+          <p>Un café macchiato es una bebida de espresso "manchada" con una pequeña cantidad de leche espumada o vaporizada.</p>
+          <button>Más info</button>
         </article>
       </div>
     </section>
 
-    <!-- Contacto -->
-    <section class="contacto" id="contacto" aria-labelledby="contacto-titulo">
-      <h2 id="contacto-titulo" class="contacto__titulo">Contáctanos</h2>
-      <form class="contacto__form" aria-label="Formulario de contacto">
-        <label for="nombre" class="contacto__label">Nombre</label>
-        <input type="text" id="nombre" name="nombre" class="contacto__input" required aria-required="true" />
+    <!-- Tabla comparativa -->
+    <section class="comparativa" id="comparativa">
+      <h2>Comparativa de Variedades</h2>
+      <table>
+        <caption>Características de Nuestros Cafés</caption>
+        <thead>
+          <tr>
+            <th>Característica</th>
+            <th>Espresso</th>
+            <th>Latte</th>
+            <th>Capuchino</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Intensidad</td>
+            <td>Alta</td>
+            <td>Media</td>
+            <td>Media</td>
+          </tr>
+          <tr>
+            <td>Cremoso</td>
+            <td>❌</td>
+            <td>✔️</td>
+            <td>✔️</td>
+          </tr>
+          <tr>
+            <td>Leche</td>
+            <td>❌</td>
+            <td>✔️</td>
+            <td>✔️</td>
+          </tr>
+          <tr>
+            <td>Espuma</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>✔️</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-        <label for="email" class="contacto__label">Correo electrónico</label>
-        <input type="email" id="email" name="email" class="contacto__input" required aria-required="true" />
-
-        <label for="mensaje" class="contacto__label">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" rows="4" class="contacto__textarea"></textarea>
-
-        <button type="submit" class="contacto__btn">Enviar</button>
-      </form>
+    <!-- Nuestros cafés explicados -->
+    <section class="cafes" id="cafes">
+      <h2>Sobre cada café</h2>
+      <div class="cafes-lista">
+        <article class="cafe-info">
+          <h3>Espresso</h3>
+          <p>
+            El espresso es la esencia del café puro. Se prepara forzando agua caliente a alta presión a través del café molido finamente, lo que resulta en una bebida concentrada, de sabor intenso y cuerpo denso. Ideal para quienes buscan la máxima intensidad y aroma en cada sorbo.
+          </p>
+        </article>
+        <article class="cafe-info">
+          <h3>Latte</h3>
+          <p>
+            El latte combina la fuerza del espresso con la suavidad de la leche vaporizada, creando una bebida cremosa y equilibrada. Es perfecto para quienes prefieren un café suave, con textura sedosa y un toque de dulzor natural.
+          </p>
+        </article>
+        <article class="cafe-info">
+          <h3>Capuchino</h3>
+          <p>
+            El capuchino es un clásico italiano que mezcla espresso, leche vaporizada y una generosa capa de espuma de leche. Suele espolvorearse con cacao en polvo, ofreciendo una experiencia cremosa, aireada y un sutil sabor achocolatado.
+          </p>
+        </article>
+      </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <p class="footer__copy">&copy; 2025 Café Aurora. Todos los derechos reservados.</p>
-    <aside class="footer__social">
-      <a href="#" class="footer__icon" title="Síguenos en Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="#" class="footer__icon" title="Síguenos en Facebook" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-    </aside>
+  <footer>
+    <p>Desarrollado por Café Aurora &copy; 2025 - Todos los derechos reservados</p>
   </footer>
-  <script src="js/reveal.js"></script>
 </body>
 </html>
